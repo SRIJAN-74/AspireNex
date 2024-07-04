@@ -1,3 +1,6 @@
+#Link to dataset: https://www.kaggle.com/datasets/nelgiriyewithana/credit-card-fraud-detection-dataset-2023
+#Could not upload the dataset in Git because the size was large.
+
 import numpy as np
 import pandas as pd
 from sklearn.model_selection import train_test_split
