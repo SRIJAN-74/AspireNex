@@ -23,7 +23,7 @@ fraudulent = credit[credit.Class == 1]
 print(legitimate.Amount.describe())
 print(fraudulent.Amount.describe())
 
-legitimate_sample = legitimate.sample(n=16589)
+legitimate_sample = legitimate.sample(n=len(fraudulent)) #this is done because value of fraudulent activity gets changed in some time. 
 
 new_dataset = pd.concat([legitimate_sample, fraudulent], axis=0)
 new_dataset.head()
